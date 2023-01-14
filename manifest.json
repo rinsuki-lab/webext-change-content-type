@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Change Content Type",
+    "version": "1",
+    "description": "Change httpbin.org/get Content-Type by X-Override-Response-Content-Type",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ]
+}
