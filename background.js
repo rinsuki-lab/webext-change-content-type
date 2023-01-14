@@ -1,5 +1,5 @@
 console.log("background.js loaded")
-browser.webRequest.onHeadersReceived.addListener(details => {
+chrome.webRequest.onHeadersReceived.addListener(details => {
     try {
         console.log("request received", details)
         const res = {
